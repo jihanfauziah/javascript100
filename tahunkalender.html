@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  let tahun = parseInt(prompt("Masukkan tahun:"));
+
+  if (tahun % 2 === 0) {
+    console.log("Tahun Genap");
+  } else {
+    console.log("Tahun Ganjil");
+  }
+
+  // Cek kabisat
+  if ((tahun % 4 === 0 && tahun % 100 !== 0) || (tahun % 400 === 0)) {
+    console.log("Tahun Kabisat");
+  } else {
+    console.log("Bukan Tahun Kabisat");
+  }
+</script>
+
+</body>
+</html>

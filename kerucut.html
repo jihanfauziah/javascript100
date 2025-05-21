@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Input jari-jari dan tinggi kerucut
+let r = 7;   // jari-jari alas
+let t = 10;  // tinggi kerucut
+const pi = Math.PI;
+
+// Hitung garis pelukis (sisi miring kerucut)
+let s = Math.sqrt(Math.pow(r, 2) + Math.pow(t, 2));
+
+// Hitung volume kerucut
+let volume = (1 / 3) * pi * Math.pow(r, 2) * t;
+
+// Hitung luas permukaan kerucut
+let luasPermukaan = pi * r * (r + s);
+
+// Tampilkan hasil
+console.log("Volume kerucut: " + volume.toFixed(2));
+console.log("Luas permukaan kerucut: " + luasPermukaan.toFixed(2));
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lingkaran - Luas dan Keliling</title>
+</head>
+<body>
+  <script>
+    // Arrow functions (mirip lambda)
+    const luasLingkaran = r => Math.PI * r * r;
+    const kelilingLingkaran = r => 2 * Math.PI * r;
+
+    let r = parseFloat(prompt("Masukkan jari-jari lingkaran (cm):"));
+
+    if (!isNaN(r)) {
+      console.log("Luas lingkaran     :", luasLingkaran(r).toFixed(2), "cm²");
+      console.log("Keliling lingkaran :", kelilingLingkaran(r).toFixed(2), "cm");
+    } else {
+      console.log("Input tidak valid.");
+    }
+  </script>
+</body>
+</html>

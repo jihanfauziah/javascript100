@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+const luas = s => s * s;
+const keliling = s => 4 * s;
+
+function persegi() {
+    let sisi = parseInt(prompt("Masukkan sisi persegi:"));
+    console.log("Luas\t\t:", luas(sisi), "cm2");
+    console.log("Keliling\t:", keliling(sisi), "cm2");
+}
+
+for (let i = 0; i < 3; i++) {
+    persegi();
+}
+
+  </script>
+</body>
+</html>

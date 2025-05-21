@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Input nilai panjang, lebar, dan tinggi prisma
+let panjangAlas = 10;  // panjang sisi alas prisma
+let lebarAlas = 6;     // lebar sisi alas prisma
+let tinggiPrisma = 8;  // tinggi prisma
+
+// Hitung luas alas (untuk prisma segiempat, alas berupa persegi panjang)
+let luasAlas = panjangAlas * lebarAlas;
+
+// Hitung keliling alas
+let kelilingAlas = 2 * (panjangAlas + lebarAlas);
+
+// Hitung volume prisma
+let volume = luasAlas * tinggiPrisma;
+
+// Hitung luas permukaan prisma
+let luasPermukaan = 2 * luasAlas + kelilingAlas * tinggiPrisma;
+
+// Tampilkan hasil
+console.log("Volume prisma: " + volume);
+console.log("Luas permukaan prisma: " + luasPermukaan);
+  </script>
+</body>
+</html>

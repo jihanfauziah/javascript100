@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Ambil input dari pengguna
+let jam = parseFloat(prompt("Masukkan jumlah jam:"));
+
+// Konversi
+let menit = jam * 60;
+let detik = jam * 3600;
+let hari = jam / 24;
+
+// Tampilkan hasil
+alert(`${jam} jam = 
+${menit} menit
+${detik} detik
+${hari.toFixed(2)} hari`);
+  </script>
+</body>
+</html>

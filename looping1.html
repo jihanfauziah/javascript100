@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log("Hello word");
+
+// Pengulangan
+for (let nilai = 0; nilai < 10; nilai++) {
+    console.log(nilai);
+}
+
+for (let x = 0; x < 10; x++) {
+    console.log("since", 2024 - x);
+}
+
+for (let w = 1; w < 10; w += 2) {
+    console.log(w + ". Hello word");
+}
+
+for (let w of "ABCD") {
+    console.log(w + ". Cerdas");
+}
+
+// \t tidak langsung terlihat di console log, tapi akan tetap diprint
+for (let w = 0; w < 5; w++) {
+    process.stdout.write(w + ". cerdas\t");
+}
+console.log(); // Untuk baris baru
+
+// List (Array)
+let buah2an = ["apel", "mangga", "jeruk", "sirsak"];
+console.log(buah2an[0]);
+console.log(buah2an[3]);
+
+for (let buah of buah2an) {
+    process.stdout.write(buah + "\t");
+
+    for (let b of buah2an) {
+        if (b === "apel") {
+            process.stdout.write(b + "\t");
+            break;
+        }
+    }
+}
+console.log(); // Untuk baris baru
+
+// While loop
+let i = 1;
+while (i < 6) {
+    console.log(i);
+    i++;
+}
+
+  </script>
+</body>
+</html>

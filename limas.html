@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Input nilai panjang, lebar, tinggi limas, dan tinggi sisi tegak
+let panjangAlas = 10;     // panjang sisi alas piramida
+let lebarAlas = 6;        // lebar sisi alas piramida
+let tinggiLimas = 12;     // tinggi piramida (jarak dari puncak ke alas)
+let tinggiSisiTegak = 8;  // tinggi sisi segitiga (sisi tegak)
+
+
+// Hitung luas alas (untuk limas segiempat, alas berupa persegi panjang)
+let luasAlas = panjangAlas * lebarAlas;
+
+// Hitung volume limas
+let volume = (1 / 3) * luasAlas * tinggiLimas;
+
+// Hitung luas sisi tegak (sisi-sisi segitiga yang membentuk limas)
+let luasSisiTegak = 4 * (0.5 * panjangAlas * tinggiSisiTegak);  // Sisi segitiga dengan panjang alas dan tinggi tegak
+
+// Hitung luas permukaan limas
+let luasPermukaan = luasAlas + luasSisiTegak;
+
+// Tampilkan hasil
+console.log("Volume limas: " + volume);
+console.log("Luas permukaan limas: " + luasPermukaan);
+  </script>
+</body>
+</html>

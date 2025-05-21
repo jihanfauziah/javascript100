@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Input jari-jari dan tinggi tabung
+let jariJari = 7; // r
+let tinggi = 10;  // t
+const pi = Math.PI; // Gunakan nilai π bawaan JavaScript
+
+// Hitung volume tabung
+let volume = pi * Math.pow(jariJari, 2) * tinggi;
+
+// Hitung luas permukaan tabung
+let luasPermukaan = 2 * pi * jariJari * (jariJari + tinggi);
+
+// Tampilkan hasil
+console.log("Volume tabung: " + volume.toFixed(2));
+console.log("Luas permukaan tabung: " + luasPermukaan.toFixed(2));
+  </script>
+</body>
+</html>

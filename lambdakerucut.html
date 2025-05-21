@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kerucut</title>
+</head>
+<body>
+  <script>
+    // Arrow functions kerucut
+    const luasAlas = r => Math.PI * r ** 2;
+    const luasSelimut = (r, s) => Math.PI * r * s;
+    const luasPermukaan = (r, s) => Math.PI * r * (r + s);
+    const volume = (r, t) => (1 / 3) * Math.PI * r ** 2 * t;
+
+    let r = parseFloat(prompt("Masukkan jari-jari (r):"));
+    let s = parseFloat(prompt("Masukkan garis pelukis (s):"));
+    let t = parseFloat(prompt("Masukkan tinggi (t):"));
+
+    if (!isNaN(r) && !isNaN(s) && !isNaN(t)) {
+      console.log("Luas alas      :", luasAlas(r).toFixed(2), "cm²");
+      console.log("Luas selimut   :", luasSelimut(r, s).toFixed(2), "cm²");
+      console.log("Luas permukaan :", luasPermukaan(r, s).toFixed(2), "cm²");
+      console.log("Volume kerucut :", volume(r, t).toFixed(2), "cm³");
+    } else {
+      console.log("Input tidak valid.");
+    }
+  </script>
+</body>
+</html>

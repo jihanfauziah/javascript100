@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let totalHari = 800;
+
+let tahun = Math.floor(totalHari / 365);
+let sisa = totalHari % 365;
+let bulan = Math.floor(sisa / 30);
+let hari = sisa % 30;
+
+console.log(`${tahun} tahun, ${bulan} bulan, ${hari} hari`);
+
+  </script>
+</body>
+</html>

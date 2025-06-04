@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Input via prompt
+let p = parseFloat(prompt("Panjang:"));
+let l = parseFloat(prompt("Lebar:"));
+let t = parseFloat(prompt("Tinggi:"));
+
+// Arrow functions (lambda)
+let volume = (p, l, t) => p * l * t;
+let luas = (p, l, t) => 2 * (p * l + p * t + l * t);
+
+// Output
+alert("Volume: " + volume(p, l, t));
+alert("Luas Permukaan: " + luas(p, l, t));
+
+  </script>
+</body>
+</html>

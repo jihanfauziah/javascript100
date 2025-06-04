@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>diskon</title>
+</head>
+<body>
+  <script>
+    let harga = parseFloat(prompt("Masukkan harga barang:"));
+let diskon = parseFloat(prompt("Masukkan persen diskon:"));
+
+let potongan = harga * diskon / 100;
+let totalBayar = harga - potongan;
+
+alert("Potongan: Rp " + potongan);
+alert("Total Bayar: Rp " + totalBayar);
+
+  </script>
+</body>
+</html>

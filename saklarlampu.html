@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Saklar Lampu</title>
+</head>
+<body>
+
+<h2>Status: <span id="status">Mati ❌</span></h2>
+<button onclick="nyalakan()">Nyalakan</button>
+<button onclick="matikan()">Matikan</button>
+
+<script>
+  let lampu = false;
+
+  function nyalakan() {
+    lampu = true;
+    document.getElementById("status").textContent = "Menyala 💡";
+  }
+
+  function matikan() {
+    lampu = false;
+    document.getElementById("status").textContent = "Mati ❌";
+  }
+</script>
+
+</body>
+</html>

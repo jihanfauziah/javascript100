@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Input menggunakan prompt (jika di browser)
+let alas = parseFloat(prompt("Masukkan alas:"));
+let tinggi = parseFloat(prompt("Masukkan tinggi:"));
+let sisiMiring = parseFloat(prompt("Masukkan sisi miring:"));
+
+// Arrow function mirip lambda
+let luas = (a, t) => a * t;
+let keliling = (a, s) => 2 * (a + s);
+
+alert("Luas: " + luas(alas, tinggi));
+alert("Keliling: " + keliling(alas, sisiMiring));
+
+  </script>
+</body>
+</html>

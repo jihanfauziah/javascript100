@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  let tahun = parseInt(prompt("Tahun keberapa kamu kuliah/sekolah?"));
+
+  let status = "";
+  if (tahun === 1) {
+    status = "Tahun Pertama";
+  } else if (tahun === 2) {
+    status = "Tahun Kedua";
+  } else if (tahun === 3) {
+    status = "Tahun Ketiga";
+  } else if (tahun === 4) {
+    status = "Tahun Akhir";
+  } else {
+    status = "Lulus atau belum terdaftar";
+  }
+
+  console.log("Status: " + status);
+</script>
+
+</body>
+</html>

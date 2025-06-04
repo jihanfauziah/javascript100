@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  let tahunLahir = parseInt(prompt("Masukkan tahun lahir:"));
+  let tahunSekarang = new Date().getFullYear();
+
+  let umur = tahunSekarang - tahunLahir;
+  let status = "";
+
+  if (umur < 6) {
+    status = "Balita";
+  } else if (umur < 13) {
+    status = "Anak-anak";
+  } else if (umur < 18) {
+    status = "Remaja";
+  } else if (umur < 60) {
+    status = "Dewasa";
+  } else {
+    status = "Lansia";
+  }
+
+  console.log("Umur: " + umur + " tahun");
+  console.log("Status: " + status);
+</script>
+
+</body>
+</html>

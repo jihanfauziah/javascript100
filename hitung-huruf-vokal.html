@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let teks = prompt("Masukkan kalimat:");
+let jumlah = 0;
+for (let huruf of teks.toLowerCase()) {
+  if ("aiueo".includes(huruf)) jumlah++;
+}
+alert("Jumlah huruf vokal: " + jumlah);
+
+  </script>
+</body>
+</html>

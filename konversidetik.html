@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konversi Detik</title>
+</head>
+<body>
+  <script>
+    let totalDetik = parseInt(prompt("Masukkan total detik:"));
+
+    let jam = Math.floor(totalDetik / 3600);
+    let sisa = totalDetik % 3600;
+    let menit = Math.floor(sisa / 60);
+    let detik = sisa % 60;
+
+    console.log(`${jam} jam, ${menit} menit, ${detik} detik`);
+  </script>
+</body>
+</html>
